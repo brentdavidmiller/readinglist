@@ -1,0 +1,334 @@
+/* Boilerplate */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+#headerBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: auto;
+    max-height: auto;
+    min-width: auto;
+    max-width: auto;
+    margin: 0;
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+.leftRight {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 2000px;
+    width: auto;
+
+    font-family:'Times New Roman', Times, serif;
+}
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 75px;
+    margin: 0;
+    background-color: #bcd5fe;
+}
+#home {
+    height: 40px;
+    width: 40px;
+
+    margin: 30px 10px 30px 10px;
+}
+#library {
+    height: 40px;
+    width: 40px;
+
+    margin: 30px 10px 30px 10px;
+}
+#settings {
+    height: 40px;
+    width: 40px;
+
+    margin: 30px 10px 30px 10px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+#headerBarMain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
+.userProfileArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#profilePic {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 0;
+}
+#userName {
+    height: 35px;
+    width: 125px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+#searchBar {
+    height: 30px;
+    width: 250px;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#searchButton {
+    height: 25px;
+    width: 60px;
+
+    border: 1px solid grey;
+    border-color: grey;
+    border-radius: 5px;
+}
+.headerButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100px;
+    width: 200px;
+    padding: 0px 0px 0px 25px;
+}
+#newList {
+    height: 30px;
+    width: 75px;
+
+    background-color: #bcd5fe;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#share {
+    height: 30px;
+    width: 75px;
+
+    background-color: #bcd5fe;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.mainBody {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    background-color: #e1e1e1;
+    border-top: 2px solid lightgrey;
+}
+#bodyHeader {
+    font-size: 36px;
+    text-align: center;
+    margin: 15px;
+    height: 100px;
+    width: 200px;
+}
+
+.bookSettings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    width: 1200px;
+}
+#newBook {
+    margin: 0px 15px 0px 15px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+    filter: drop-shadow(5px 4px 2px #cccccc);
+    font-size: 18px;
+}
+#ascendDescend {
+    margin: 15px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+    border-color: lightgrey;
+    filter: drop-shadow(5px 4px 2px #cccccc);
+    font-size: 18px;
+}
+
+
+/*Form Area*/
+#formArea {
+    margin: 0;
+    height: 80px;
+    width: 1600px;
+}
+.attribute {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#formArea > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+
+    height: 75px;
+
+    margin: 15px;
+    background-color: #d5e4fa;
+
+    border-radius: 8px;
+    filter: drop-shadow(5px 4px 2px #cccccc);
+
+}
+
+
+
+
+
+/*Star Rating*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    display: inline-block;
+    vertical-align: middle;
+    /* height: 46px; */
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+@media screen and (max-width: 1300px) {
+    #formArea {
+        height: auto;
+        width: 90%;
+    }
+    #formArea > div {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .bookSettings {
+        width: 90%;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reading List</title>
+    <link rel="stylesheet" href="readinglist.css">
+  </head>
+  <body>
+    <div class="leftRight">
+        <div class="left" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+            <input id="home" type="image" src="readinglistassets/homeicon.png" name="cog">home</input>
+            <input id="library" type="image" src="readinglistassets/libraryicon.png" name="cog">library</input>
+            <input id="settings" type="image" src="readinglistassets/settingsicon.png" name="cog">settings</input>
+        </div>
+        <div class="right">
+            <div id="headerBarMain">
+                <div class="userProfileArea">
+                    <button id="profilePic">pic</button>
+                    <input id="userName" placeholder="UserName" type="text" maxlength="12"></input>
+                </div>
+                <form class="search">
+                    <button id="searchButton">Search</button>
+                    <input id ="searchBar" type="search" id="query" placeholder="Search">
+                </form>
+                <div class="headerButtons">
+                    <button id="newList">New List</button>
+                    <button id="share">Share</button>
+                </div>
+            </div>
+            <div class="mainBody">
+                <h1 id="bodyHeader">Book List</h1>
+                
+                <div class="bookSettings">
+                    <input id="newBook" type="image" src="readinglistassets/newbook.png" name="book"></input>
+                    <div>
+                    <label for="filter">Filter:</label>
+                    <select id="filter">
+                        <option selected disabled>Choose One:</option>
+                        <option>Date Added</option>
+                        <option>Title</option>
+                        <option>Genre</option>
+                        <option>Author</option>
+                        <option>Rating</option>
+                        <option>Read</option>
+                    </select>
+                </div>
+                    <input id="ascendDescend" type="image" src="readinglistassets/sorticon.png" name="sort"></input>
+                </div>
+
+                <div id="formArea">
+                    <form name="bookform" id="bookForm">
+                        <template>
+                            <div>
+                                <div class="attribute">
+                                    <label for="dateAdded">Date: </label>
+                                    <p id="date" placeholder="Date Added"></p>
+                                </div>
+                                <div class="attribute">
+                                    <label for="title">Title: </label>
+                                    <input type="text" id="title" placeholder="Book Title">
+                                </div>
+                                <div class="attribute">
+                                    <label for="genre">Genre: </label>
+                                    <select id="filter">
+                                        <option selected disabled>Choose One:</option>
+                                        <option>Action & Adventure</option>
+                                        <option>Fantasy</option>
+                                        <option>Scifi</option>
+                                        <option>Horror</option>
+                                        <option>Suspense</option>
+                                        <option>Romance</option>
+                                        <option>Historical</option>
+                                        <option>Biographical</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="attribute">
+                                    <label for="author">Author: </label>
+                                    <input type="text" id="author" placeholder="Author Name">
+                                </div>
+                                <div class="attribute">
+                                    <label for="rating">Rating: </label>
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                                <div class="attribute">
+                                    <label for="readOrNot">Read?: </label>
+                                    <input type="checkbox" id="readOrNot">
+                                </div>
+                            </div>
+                        </template>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <footer></footer>
+
+	<script src="readinglist.js"></script>
+  </body>
+</html>
+
+<!--
+    title
+    author
+    publisher
+    summary
+    read or not
+
+    delete books
+ -->
