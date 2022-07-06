@@ -19,7 +19,7 @@ function newBook () {
     const day = dateToday.getDate();
     const month = dateToday.getMonth();
     const year = dateToday.getFullYear();
-    const fullDate = (day + "-" + month + "-" + year)
+    const fullDate = (day + "-" + month + "-" + year);
     const ids = clone.querySelectorAll("[id], [for], [name]"); //selects any elements that have id and for attributes
         for (const el of ids) {
             if (el.hasAttribute("id")) {
